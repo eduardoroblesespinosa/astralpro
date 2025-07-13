@@ -1,0 +1,212 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astral Projection Mastery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <!-- Warning Message -->
+        <div id="safety-warning" class="safety-warning">
+            <div class="warning-content">
+                <h2>A Word of Caution</h2>
+                <p>Astral projection is a profound spiritual practice. Do not proceed if you are feeling emotionally unstable, fearful, or mentally disturbed. Ensure you are in a safe, comfortable, and uninterrupted space.</p>
+                <button id="accept-warning-btn" class="main-btn">I Understand and Wish to Proceed</button>
+            </div>
+        </div>
+
+        <nav id="main-nav" style="display: none;">
+            <button class="nav-btn" data-section="home-section">Home</button>
+            <button class="nav-btn" data-section="library-section">Library</button>
+            <button class="nav-btn" data-section="profile-section">Profile</button>
+        </nav>
+
+        <main id="main-content" style="display: none;">
+            <!-- 1. Home / Introduction -->
+            <section id="home-section" class="app-section active">
+                <div class="cosmic-background">
+                    <div id="stars"></div>
+                    <div id="stars2"></div>
+                    <div id="stars3"></div>
+                    <div class="etheric-body-animation">
+                        <img src="etheric-body.png" alt="Etheric Body" class="etheric-glow">
+                    </div>
+                </div>
+                <div class="section-content">
+                    <h1 class="main-title">Astral Projection</h1>
+                    <p class="subtitle">Your consciousness can go beyond the body. We'll show you how.</p>
+                    <button id="start-journey-btn" class="main-btn">Initiate Step-by-Step</button>
+                </div>
+            </section>
+
+            <!-- 2. Energetic Preparation -->
+            <section id="preparation-section" class="app-section">
+                <div class="section-content">
+                    <h2>Step 1: Energetic Preparation</h2>
+                    <div class="content-grid">
+                        <div class="instruction-card">
+                            <h3>Purify Your Space</h3>
+                            <p>Cleanse your room physically and energetically. You can burn sage, use incense, or simply hold a strong intention of clearing all negative energies.</p>
+                            <h3>Ideal Posture</h3>
+                            <p>Lie down comfortably on your back, arms at your sides, palms up. Ensure your spine is straight. Do not cross your limbs.</p>
+                        </div>
+                        <div class="instruction-card">
+                            <h3>Audio-Guided Relaxation</h3>
+                            <p>Listen to this short guided meditation to calm your mind and relax your body.</p>
+                            <audio controls src="relaxation-audio.mp3" class="audio-player"></audio>
+                            <p class="small-text">(Placeholder audio)</p>
+                        </div>
+                        <div class="instruction-card aura-visualizer">
+                            <h3>Your Aura</h3>
+                            <div class="aura-graphic">
+                                <div class="chakra" id="chakra-root"></div>
+                                <div class="chakra" id="chakra-sacral"></div>
+                                <div class="chakra" id="chakra-solar"></div>
+                                <div class="chakra" id="chakra-heart"></div>
+                                <div class="chakra" id="chakra-throat"></div>
+                                <div class="chakra" id="chakra-third-eye"></div>
+                                <div class="chakra" id="chakra-crown"></div>
+                            </div>
+                            <p>Visualize your energy centers, balanced and bright.</p>
+                        </div>
+                        <div class="instruction-card">
+                            <h3>Readiness Checklist</h3>
+                            <ul class="checklist">
+                                <li><label><input type="checkbox"> My space is quiet and I won't be disturbed.</label></li>
+                                <li><label><input type="checkbox"> The lighting is dim and comfortable.</label></li>
+                                <li><label><input type="checkbox"> I have set a clear, positive intention for this journey.</label></li>
+                                <li><label><input type="checkbox"> My body is comfortable and relaxed.</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="next-step-btn main-btn" data-next="breathing-section" disabled>Next Step: Breathing</button>
+                </div>
+            </section>
+            
+            <!-- 3. Breathing and Body Disconnection -->
+            <section id="breathing-section" class="app-section">
+                 <div class="section-content">
+                    <h2>Step 2: Breathing & Disconnection</h2>
+                    <p>We will use 4x4 Box Breathing. Inhale for 4s, hold for 4s, exhale for 4s, hold for 4s. Synchronize your breath with the animation.</p>
+                    <div class="breathing-anim-container">
+                        <div class="breathing-box"></div>
+                        <div class="breathing-dot"></div>
+                        <p class="breathing-text">Inhale</p>
+                    </div>
+                    <p>As you breathe, feel your physical body growing heavy and sinking into the surface below you, while your energy body becomes light and vibrant.</p>
+                     <button class="next-step-btn main-btn" data-next="separation-section">Next Step: Separation</button>
+                </div>
+            </section>
+
+            <!-- 4. Separation from the Physical Body -->
+            <section id="separation-section" class="app-section">
+                <div class="section-content">
+                    <h2>Step 3: Separation from the Physical Body</h2>
+                    <div class="content-grid">
+                        <div class="instruction-card">
+                            <h3>The Rope Technique</h3>
+                            <p>Imagine a thick, strong rope hanging from the ceiling above you. Without moving your physical muscles, feel your energetic hands reach up and grab this rope. Pull yourself up, hand over hand, out of your physical body. Feel the sensation of rising.</p>
+                        </div>
+                        <div class="instruction-card">
+                            <h3>Binaural Beats</h3>
+                            <p>Listen to these frequencies to help induce the ideal brainwave state for separation. Use headphones for the best effect.</p>
+                            <button id="play-binaural-btn" class="main-btn">Play 4Hz Theta Waves</button>
+                            <p id="binaural-status">Status: Inactive</p>
+                        </div>
+                        <div class="instruction-card">
+                            <h3>Ring of Light Protection</h3>
+                            <img src="protection-ring.png" alt="Ring of Light" class="inline-img">
+                            <p>Before you exit, visualize a brilliant ring of golden-white light forming around your physical body. This is your shield of protection. Affirm that only beings of light and love may enter your space.</p>
+                        </div>
+                    </div>
+                     <button class="next-step-btn main-btn" data-next="exploration-section">I am Ready to Explore</button>
+                     <button id="emergency-return-btn" class="emergency-btn">Emergency Return</button>
+                </div>
+            </section>
+
+            <!-- 5. Exploration and Travel -->
+            <section id="exploration-section" class="app-section">
+                 <div class="section-content">
+                    <h2>Step 4: Exploration</h2>
+                    <p>You are now in the astral plane. Stay calm and curious.</p>
+                     <div class="content-grid">
+                        <div class="instruction-card">
+                            <h3>How to Move</h3>
+                            <p>Movement is controlled by thought and will. Simply think of where you want to go, and you will drift there. To fly, feel the sensation of lightness and lift-off.</p>
+                        </div>
+                        <div class="instruction-card">
+                             <h3>Guided Journeys</h3>
+                             <ul class="journey-list">
+                                <li><button class="journey-btn">Visit Your Spirit Guide</button></li>
+                                <li><button class="journey-btn">Journey to the Soul Temple</button></li>
+                                <li><button class="journey-btn">Explore Past Life Memories</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                     <button class="next-step-btn main-btn" data-next="return-section">Initiate Safe Return</button>
+                </div>
+            </section>
+
+            <!-- 6. Safe Return -->
+            <section id="return-section" class="app-section">
+                <div class="section-content">
+                    <h2>Step 5: Safe Return</h2>
+                    <p>It is time to return to your physical body. The journey is complete for now.</p>
+                    <h3>Re-entry Technique</h3>
+                    <p>Gently turn your awareness back to your physical form. Feel your fingers and toes. Become aware of the weight of your body. Slowly and deliberately, merge your consciousness back into your physical self, aligning perfectly. Take a deep, grounding breath.</p>
+                    <h3>Log Your Experience</h3>
+                    <textarea id="astral-log" placeholder="Record your experiences, sights, and feelings..."></textarea>
+                    <button id="save-log-btn" class="main-btn">Save to Logbook</button>
+                     <button class="next-step-btn main-btn" data-next="home-section">Finish Session</button>
+                </div>
+            </section>
+
+            <!-- 7. Initiation Library -->
+            <section id="library-section" class="app-section">
+                <div class="section-content">
+                    <h2>Initiation Library</h2>
+                    <div class="content-grid">
+                        <div class="library-item">
+                           <h3>Astral Travel Manual</h3>
+                           <p>A complete guide to the principles and practices of astral projection.</p>
+                           <button class="main-btn" disabled>Read Now</button>
+                        </div>
+                         <div class="library-item">
+                           <h3>Expert Videos</h3>
+                           <p>Wisdom from experienced travelers on navigating the astral realms.</p>
+                           <button class="main-btn" disabled>Watch Now</button>
+                        </div>
+                         <div class="library-item">
+                           <h3>Energetic Security</h3>
+                           <p>In-depth documents on protection techniques and safe travel protocols.</p>
+                           <button class="main-btn" disabled>Study Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 8. Profile and Monitoring -->
+            <section id="profile-section" class="app-section">
+                 <div class="section-content">
+                    <h2>Profile & Progress</h2>
+                    <h3>Astral Logbook</h3>
+                    <div id="logbook-entries">
+                        <p>Your saved experiences will appear here.</p>
+                    </div>
+                     <h3>Your Rank: <span class="rank-title">Novice</span></h3>
+                     <p>Complete more journeys to advance your rank.</p>
+                     <div class="progress-bar-container">
+                         <div class="progress-bar"></div>
+                     </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
